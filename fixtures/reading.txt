@@ -1,0 +1,4 @@
+Study Drive demo library
+1. Open the synthetic lesson in the desktop player.
+2. Seek, change playback speed, or turn on picture enhancement.
+3. Return to the home screen to resume the lesson.

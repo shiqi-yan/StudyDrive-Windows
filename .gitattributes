@@ -1,0 +1,4 @@
+* text=auto eol=lf
+*.pdf binary
+fixtures/gbk.txt binary
+fixtures/student-ids.csv binary

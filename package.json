@@ -1,0 +1,43 @@
+{
+  "name": "study-drive",
+  "productName": "课盘",
+  "version": "0.1.0",
+  "description": "OneDrive 学习文件管理器",
+  "author": "Study Drive",
+  "main": "src/main.cjs",
+  "scripts": {
+    "check": "node scripts/check.cjs",
+    "test": "node --test --test-isolation=none tests/core.test.cjs tests/documents.test.cjs tests/drive-index.test.cjs tests/resume-transfer.test.cjs tests/group-transfer-recycle.test.cjs tests/cloud-recycle.test.cjs tests/cloud-recycle-browser.test.cjs tests/cloud-recycle-restore.test.cjs",
+    "test:e2e": "node tests/windows.cjs",
+    "test:portable": "node tests/portable.cjs",
+    "pack:dir": "node scripts/package.cjs",
+    "pack:portable": "node scripts/portable.cjs",
+    "pack:zip": "node scripts/release-zip.cjs",
+    "test:video": "node tests/mpv-windows.cjs",
+    "test:integrated": "node tests/integrated-windows.cjs",
+    "test:auth": "node tests/windows-auth.cjs",
+    "test:office": "node tests/office-portable.cjs",
+    "test:startup": "node tests/startup-windows.cjs",
+    "test:txt": "node tests/txt-portable.cjs",
+    "test:search:windows": "node tests/search-windows.cjs"
+  },
+  "devDependencies": {
+    "@deepseek-ai/libreoffice-kit": "0.2.3",
+    "@deepseek-ai/libreoffice-kit-win32-x64": "0.2.3",
+    "@koromix/koffi-win32-x64": "3.1.1",
+    "electron-builder": "26.18.0",
+    "koffi": "3.1.1",
+    "pdfjs-dist": "5.4.394",
+    "playwright": "1.65.1"
+  },
+  "dependencies": {
+    "exceljs": "4.4.0",
+    "markdown-it": "15.0.3",
+    "xlsx": "https://cdn.sheetjs.com/xlsx-0.20.3/xlsx-0.20.3.tgz"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shiqi-yan/StudyDrive-Windows.git"
+  }
+}

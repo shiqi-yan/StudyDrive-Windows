@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>课盘</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <div id="shell">
+    <header id="titlebar">
+      <div class="brand"><span class="brand-icon"></span><strong>课盘</strong><span id="build-version" class="build-version"></span></div>
+      <div class="account-area" id="account"></div>
+    </header>
+    <div id="toolbar" aria-label="网盘工具"></div>
+    <aside id="rail" aria-label="导航">
+      <nav id="nav"></nav>
+    </aside>
+    <main id="main">
+      <article id="content" aria-label="当前页面" tabindex="-1">
+        <section class="welcome" id="startup"><h2>课盘</h2><p role="status">正在启动课盘…</p></section>
+      </article>
+    </main>
+  </div>
+  <dialog id="dialog"></dialog>
+  <div id="toasts" role="status" aria-live="polite"></div>
+</body>
+</html>
